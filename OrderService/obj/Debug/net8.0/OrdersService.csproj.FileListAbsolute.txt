@@ -1,0 +1,8 @@
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.csproj.AssemblyReference.cache
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.AssemblyInfoInputs.cache
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.AssemblyInfo.cs
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.csproj.CoreCompileInputs.cache
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jakov\Documents\Jakov - posao\Projekti\Misc\ecommerce-demo\ecommerce-microservice-demo\OrderService\obj\Debug\net8.0\OrdersService.sourcelink.json

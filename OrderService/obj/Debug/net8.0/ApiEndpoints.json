@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "OrderService.Controllers.OrdersController",
+    "Method": "GetOrders",
+    "RelativePath": "api/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderService.Controllers.OrdersController",
+    "Method": "AddOrder",
+    "RelativePath": "api/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order",
+        "Type": "OrderService.Models.Order",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
