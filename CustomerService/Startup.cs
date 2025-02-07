@@ -1,6 +1,6 @@
-﻿using OrderService.Services;
+﻿using CustomerService.Services;
 
-namespace OrderService
+namespace CustomerService
 {
     public class Startup
     {
@@ -15,7 +15,7 @@ namespace OrderService
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddSingleton<IOrdersService, OrdersService>();
+            services.AddSingleton<ICustomersService, CustomersService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -30,8 +30,10 @@ namespace OrderService
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers(); 
+                endpoints.MapControllers();
             });
         }
+
     }
 }
+

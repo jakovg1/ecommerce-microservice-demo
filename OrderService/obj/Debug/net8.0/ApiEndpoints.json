@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "order",
-        "Type": "OrderService.Models.Order",
+        "Name": "request",
+        "Type": "OrderService.Models.OrderRequest",
         "IsRequired": true
       }
     ],

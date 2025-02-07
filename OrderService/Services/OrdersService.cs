@@ -1,7 +1,6 @@
 ﻿using OrderService.Models;
-using CustomerService.Models;
 
-namespace OrderService.Services
+namespace OrderService.Services 
 {
     public class OrdersService : IOrdersService
     {
@@ -18,14 +17,13 @@ namespace OrderService.Services
 
         void IOrdersService.AddOrder(OrderRequest request)
         {
-
-            Customer customer = _customers.FirstOrDefault(c => c.Id == request.CustomerId);
-            Product product = _products.FirstOrDefault(p => p.Id == productId);
-
+            Product? p = _products.Find(p => p.Id == request.ProductId);
+            var productPrice = p?.Price ?? 10;
             var maxId = _orders.MaxBy(o => o.Id)?.Id ?? 0;
-            var orderId = maxId + 1;
+            var orderId = maxId + 1; 
 
-            Order newOrder = new Order() { Id = orderId, CustomerId = customerId, ProductId = productId };
+            Order newOrder = new() { Id = orderId, CustomerId = request.CustomerId, 
+                ProductId = request.ProductId, ProductPrice = productPrice, CustomerEmail = "foo" };
             _orders.Add(newOrder);
 
         }

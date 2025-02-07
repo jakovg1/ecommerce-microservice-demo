@@ -16,21 +16,16 @@ public class CustomersController : ControllerBase
         _logger = logger;
         _customersService = customersService;
     }
-    /*
-    [HttpGet("{id}")]
-    public async Task<String> GetCustomerEmail(int customerId)
-    {
-        var email = await _customersService.GetCustomerEmail(customerId);
-        return email;
-        //return _customersService.getCustomer(customerId);
-    }
-    */
 
     [HttpGet("{id}")]
-    public async Task<Customer> GetCustomer(int customerId)
+    public IActionResult GetCustomer(int id)
     {
-        var customer = _customersService.GetCustomer(customerId);
-        return customer;
+        var customer = _customersService.GetCustomer(id);
+        if(customer == null)
+        {
+            return NotFound();
+        }
+        return Ok(customer);
     }
 
 }
