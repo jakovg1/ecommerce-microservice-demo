@@ -12,12 +12,22 @@ namespace OrderService.Services
         new Product { Id = 3, Name = "Book" , Price = 50 }
     };
 
+        private readonly HttpClient _httpClient;
+
         private List<Order> _orders = new () {};
-        public OrdersService() { }
+        public OrdersService(HttpClient httpClient)
+        {
+            _httpClient = httpClient;  
+        }
 
         void IOrdersService.AddOrder(OrderRequest request)
         {
             Product? p = _products.Find(p => p.Id == request.ProductId);
+
+            // get customer via API call and get customerEmail??  ????????????????''
+            //var email = await _httpClient.GetFromJsonAsync<String>($"http://customerservice/api/email/{customerId}"); 
+
+
             var productPrice = p?.Price ?? 10;
             var maxId = _orders.MaxBy(o => o.Id)?.Id ?? 0;
             var orderId = maxId + 1; 

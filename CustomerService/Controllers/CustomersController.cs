@@ -17,15 +17,28 @@ public class CustomersController : ControllerBase
         _customersService = customersService;
     }
 
-    [HttpGet("{id}")]
-    public IActionResult GetCustomer(int id)
+    /*
+    [HttpGet("{customerId}")]
+    public IActionResult GetCustomer(int customerId)
     {
-        var customer = _customersService.GetCustomer(id);
+        var customer = _customersService.GetCustomer(customerId);
         if(customer == null)
         {
             return NotFound();
         }
         return Ok(customer);
+    }
+    */
+
+    [HttpGet("emails/{customerId}")]
+    public IActionResult GetCustomerEmail(int customerId)
+    {
+        var customer = _customersService.GetCustomer(customerId);
+        if (customer == null)
+        {
+            return NotFound();
+        }
+        return Ok(customer.Email);
     }
 
 }

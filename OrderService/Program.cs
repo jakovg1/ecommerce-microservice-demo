@@ -7,7 +7,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); // Ensure this line is present
 
 builder.Services.AddControllers();
-builder.Services.AddSingleton<IOrdersService, OrdersService>(); 
+builder.Services.AddSingleton<IOrdersService, OrdersService>();
+builder.Services.AddHttpClient();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 

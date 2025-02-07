@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{9ECD59FA-A6CD-4FF7-A93A-F19BD61FADDC}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C69A0EC3-C3FC-415E-9235-8EECD984D16E}|OrderService\\OrderService.csproj|c:\\users\\jakov\\documents\\jakov - posao\\projekti\\misc\\ecommerce-demo\\ecommerce-microservice-demo\\orderservice\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69A0EC3-C3FC-415E-9235-8EECD984D16E}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69A0EC3-C3FC-415E-9235-8EECD984D16E}|OrderService\\OrderService.csproj|c:\\users\\jakov\\documents\\jakov - posao\\projekti\\misc\\ecommerce-demo\\ecommerce-microservice-demo\\orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69A0EC3-C3FC-415E-9235-8EECD984D16E}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9ECD59FA-A6CD-4FF7-A93A-F19BD61FADDC}|CustomerService\\CustomerService.csproj|c:\\users\\jakov\\documents\\jakov - posao\\projekti\\misc\\ecommerce-demo\\ecommerce-microservice-demo\\customerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9ECD59FA-A6CD-4FF7-A93A-F19BD61FADDC}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,8 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\OrderService\\Program.cs",
+              "RelativeDocumentMoniker": "OrderService\\Program.cs",
+              "ToolTip": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\OrderService\\Program.cs",
+              "RelativeToolTip": "OrderService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T18:03:56.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\OrderService\\Services\\OrdersService.cs",
+              "RelativeDocumentMoniker": "OrderService\\Services\\OrdersService.cs",
+              "ToolTip": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\OrderService\\Services\\OrdersService.cs*",
+              "RelativeToolTip": "OrderService\\Services\\OrdersService.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T16:49:47.386Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +70,14 @@
               "RelativeDocumentMoniker": "CustomerService\\Controllers\\CustomersController.cs",
               "ToolTip": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\CustomerService\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "CustomerService\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwB0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T16:12:01.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\CustomerService\\Program.cs",
               "RelativeDocumentMoniker": "CustomerService\\Program.cs",
@@ -51,12 +85,11 @@
               "RelativeToolTip": "CustomerService\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T16:11:30.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T16:11:30.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\CustomerService\\Startup.cs",
               "RelativeDocumentMoniker": "CustomerService\\Startup.cs",
@@ -64,12 +97,11 @@
               "RelativeToolTip": "CustomerService\\Startup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T16:09:57.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T16:09:57.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Jakov\\Documents\\Jakov - posao\\Projekti\\Misc\\ecommerce-demo\\ecommerce-microservice-demo\\OrderService\\Startup.cs",
               "RelativeDocumentMoniker": "OrderService\\Startup.cs",
@@ -77,8 +109,7 @@
               "RelativeToolTip": "OrderService\\Startup.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAqwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T16:09:29.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T16:09:29.116Z"
             }
           ]
         }
