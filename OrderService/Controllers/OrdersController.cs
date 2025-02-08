@@ -21,9 +21,9 @@ public class OrdersController : ControllerBase
     public IActionResult GetOrders() => Ok(_ordersService.GetOrders());
 
     [HttpPost]
-    public IActionResult AddOrder([FromBody] OrderRequest request)
+    public async Task<ActionResult<Order>> AddOrder([FromBody] OrderRequest request)
     {
-        _ordersService.AddOrder(request);
-        return Ok();
+        Order order = await _ordersService.AddOrder(request);
+        return Ok(order);
     }
 }

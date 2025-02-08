@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CustomerService.Controllers;
 
 [ApiController]
-[Route("api/orders")]
+[Route("api/customers")]
 public class CustomersController : ControllerBase
 {
     private readonly ILogger<CustomersController> _logger;

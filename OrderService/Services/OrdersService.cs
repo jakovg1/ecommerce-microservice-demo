@@ -20,21 +20,24 @@ namespace OrderService.Services
             _httpClient = httpClient;  
         }
 
-        void IOrdersService.AddOrder(OrderRequest request)
+        async Task<Order> IOrdersService.AddOrder(OrderRequest request) 
         {
             Product? p = _products.Find(p => p.Id == request.ProductId);
 
             // get customer via API call and get customerEmail??  ????????????????''
-            //var email = await _httpClient.GetFromJsonAsync<String>($"http://customerservice/api/email/{customerId}"); 
+            //var email = await _httpClient.GetFromJsonAsync<String>($"http://customerservice/api/email/{request.CustomerId}");
+            var email = await _httpClient.GetStringAsync($"http://customerservice:8080/api/customers/emails/{request.CustomerId}");
 
-
+            if (email == null) email = "email.fallback@gmail.com";
+            
             var productPrice = p?.Price ?? 10;
             var maxId = _orders.MaxBy(o => o.Id)?.Id ?? 0;
             var orderId = maxId + 1; 
 
             Order newOrder = new() { Id = orderId, CustomerId = request.CustomerId, 
-                ProductId = request.ProductId, ProductPrice = productPrice, CustomerEmail = "foo" };
+                ProductId = request.ProductId, ProductPrice = productPrice, CustomerEmail = email };
             _orders.Add(newOrder);
+            return newOrder;
 
         }
 

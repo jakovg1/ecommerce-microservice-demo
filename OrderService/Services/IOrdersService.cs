@@ -5,7 +5,7 @@ namespace OrderService.Services
     public interface IOrdersService
     {
         IEnumerable<Order> GetOrders();
-        void AddOrder(OrderRequest request);
+        Task<Order> AddOrder(OrderRequest request); 
 
     }
 }
