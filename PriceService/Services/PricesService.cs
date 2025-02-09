@@ -11,7 +11,9 @@ namespace PriceService.Services
     };
         string IPricesService.getProductPrice(int productId, DateOnly orderDate)
         {
-            //order date is not used here
+            //orderDate is not used here (price calculation is not defined on date)
+            // TODO implement product prices by date
+
             Product? product = _products.FirstOrDefault(p => p.Id == productId);
             if (product == null) return null;
             return product.Price.ToString();

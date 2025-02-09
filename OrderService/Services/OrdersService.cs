@@ -7,14 +7,6 @@ namespace OrderService.Services
         private HttpClient _httpClient;
         private ILogger<OrdersService> _logger;
 
-        /*
-        private readonly List<Product> _products = new()
-    {
-        new Product { Id = 1, Name = "FlowerPot", Price = 20 },
-        new Product { Id = 2, Name = "Table" , Price = 400 },
-        new Product { Id = 3, Name = "Book" , Price = 50 }
-    };
-        */
         private readonly int _defaultProductPrice = 10;
         private readonly string _defaultCustomerEmail = "email.fallback@gmail.com";
 
@@ -29,9 +21,13 @@ namespace OrderService.Services
 
         async Task<Order> IOrdersService.AddOrder(OrderRequest request) 
         {
-            var orderDate = $"{DateTime.Now:yyyy - MM - dd}";
+            var orderDate = DateOnly.FromDateTime(DateTime.Now);
 
-            var productPriceString = await _httpClient.GetStringAsync($"http://priceservice:8080/api/prices/{request.ProductId}/{orderDate}");
+            var discountString = await _httpClient.GetStringAsync($"http://contractservice:8080/api/contracts/{request.CustomerId}");
+            double discount = double.Parse(discountString);
+
+            //var productPriceString = await _httpClient.GetStringAsync($"http://priceservice:8080/api/prices/{request.ProductId}/{orderDate}");
+            var productPriceString = await _httpClient.GetStringAsync($"http://priceservice:8080/api/prices/{request.ProductId}");
             int productPrice;
             if (productPriceString == null)
             {
@@ -50,7 +46,8 @@ namespace OrderService.Services
             };
 
             var maxId = _orders.MaxBy(o => o.Id)?.Id ?? 0;
-            var orderId = maxId + 1; 
+            var orderId = maxId + 1;
+            productPrice = (int)(productPrice * discount);
 
             Order newOrder = new() { Id = orderId, CustomerId = request.CustomerId, 
                 ProductId = request.ProductId, ProductPrice = productPrice, CustomerEmail = email };

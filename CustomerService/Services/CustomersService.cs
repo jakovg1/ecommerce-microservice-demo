@@ -4,12 +4,7 @@ namespace CustomerService.Services
 {
     public class CustomersService : ICustomersService
     {
-        private readonly List<Customer> _customers = new()
-        {
-            new Customer { Id = 1, Name = "Andy", Email = "andy@gmail.com" },
-            new Customer { Id = 2, Name = "Welsh", Email = "welsh@gmail.com" },
-            new Customer { Id = 3, Name = "Joe", Email = "joe@gmail.com" }
-        };
+        private readonly List<Customer> _customers = Customers.customers;
         void ICustomersService.AddCustomer(Customer c)
         {
             _customers.Add(c);

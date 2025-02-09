@@ -14,13 +14,23 @@ namespace PriceService.Controllers
             _logger = logger;
             _pricesService = pricesService;
         }
-
-        [HttpGet("api/prices/{productId}/{orderDate}")]
+        /*
+        [HttpGet("{productId}/{orderDate}")]
         public ActionResult<String> GetProductPrice(int productId, DateOnly orderDate)
         {
             string price = _pricesService.getProductPrice(productId, orderDate);
             if (price == null) return NotFound();
             return Ok(price);
         }
+        */
+
+        [HttpGet("{productId}")]
+        public IActionResult GetProductPrice(int productId)
+        {
+            string price = _pricesService.getProductPrice(productId, DateOnly.FromDateTime(DateTime.Now));
+            if (price == null) return NotFound();
+            return Ok(price);
+        }
+        
     }
 }
